@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>La vie douce</title>
-
+    <style>
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+    </style>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
     <script type="text/javascript">
@@ -21,6 +25,7 @@
             }
         });
     </script>
+    
 
 </head>
 
@@ -30,10 +35,10 @@
     <div class="wrapper">
         <nav>
             <div>
-            
-            <div class="logo">La vie douce</div>
+           
+            <div class="logo" >La vie douce</div>
             <ul>
-                <li><a href="Car.html">Cardápios</a></li>
+                <li><a href="car.html">Cardápios</a></li>
                 <li><a href="pre.html">Preços</a></li>
                 <li><a href="out.html">Outros</a></li>
                 <li><a class="active" href="log.html" data-toggle="modal" data-target="#exampleModal">Login</a></li>
@@ -42,11 +47,61 @@
         </nav>
 
         <section class="sec1"></section>
-        <section class="content">
-            <p>.......................................................................... Seja feliz e tenha uma vida doce ..................................................................</p>
-            <p>.......................................................................... Nossos doces aqui para vocês ......................................................................</p>
-        </section>
         
+        <section class="content">
+            <p>Sabores doces são os favoritos de grande parte da humanidade. Tanto que a palavra “doce” virou sinônimo de tudo o que é agradável: uma pessoa simpática é “um doce”.... Os açúcares, carboidratos simples com propriedades químicas e físicas fascinantes, são os principais responsáveis por esse sabor de tanto sucesso. Deixe sua vida mais docecom os nossos doces, Olhe nosso site e descubra.</p>
+        </section>
+       
+        <div class="w3-container">
+                      
+          <div class="w3-content w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="img/111.jpg" style="width:100%">
+            <img class="mySlides" src="img/22.jpg" style="width:100%">
+            <img class="mySlides" src="img/33.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+          }
+          </script>
+
+        
+        <section class="linha-especial">
+            <h2 class=" wow fadeIn" data-wow-delay=".5s">Nossos</h2>
+            <h3 class=" wow fadeInDown" data-wow-delay="1s">Cardápios</h3>
+            <a class=" wow fadeInDown" data-wow-delay="1s" href="Car.html">Cardápios</a>
+        </section>
 
         <section class="conheca-o-hotel">
             <h1>Um pouco do que você ira encontrar nesse site</h1>
@@ -63,8 +118,12 @@
         </section>
         
         
-                
-                
+        <section class="linha">
+            <h2 class=" wow fadeIn" data-wow-delay=".5s">Veja os</h2>
+            <h3 class=" wow fadeInDown" data-wow-delay="1s">Outros</h3>
+            <a class=" wow fadeInDown" data-wow-delay="1s" href="out.html">Outras</a>
+        </section>
+                 
 
         <section class="header-site">
 
@@ -81,42 +140,40 @@
             </div>
 
         </section>
-
-     <!-- fale conosco-->
-<section class="caracteristicas">
-    <ul class="grid">
-        <li>
-            <i class="fas fa-location-arrow"></i>
-            <h4>Localização </h4>
-            <p>Localizado em São Leopoldo, Rio de Janeiro, Belo Horizonte, Porto Alegre, entre outos</p>
-
-        </li>
-        <li>
-            <i class="fas fa-gift"></i>
-            <h4>Pacote de Ofertas</h4>
-            <p>Ao se cadastrar você ganha desconto em nossos produtos (Sementes e mudas)</p>
-
-        </li>
+        <footer class="rodape">
+            <div class="rodape-bg">
+                <div class="endereco">
+                    <h3>Endereços</h3>
+                    <p>Perto do shopping - RS</p>
+                    <p>Ao lado da UPA Central</p>
+                </div>
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <p>Rio Grande do sul, perto do shopping - Laviedouce@gmail.com</p>
+                    <p> 0000-0000 </p>
+                    <p> 1111-1111 </p>
+    
+                </div>
+                <div class="horario">
+                    <h3>Horario</h3>
+                    <p>Aberto segunda a sábado 8:30 - 19:30</p>
+                    <p>Domingo e Feriado 11:00 - 17:00</p>
+                </div> 
+                <div class="novidades">
+                    <h3>Novidades</h3>
+                    <input type="text" name="button" value="">
+                    <a class="btn-rodape" href="log.html">Assine</a>
+                </div>
+                <div id="voltarTopo">
+                    <a href="index.html" id="subir"><font size="+3">Topo</font></a>
+                </div>
+            </div>
+        </footer>
+        <section class="rodape-final">
+            <p>Criadora Maira Mauhs</p>
+        </section>
+       
         
-    </ul>
-</section>
-
-    <form>
-        <input type="text" placeholder="Informe seu e-mail">
-        <button>Cadastrar</button>
-    </form>
-</section>
-<!--Rodapé do site-->
-<footer>
-    <p>Todos os direitos reservados - &reg;</p>
-    <ul>
-        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-snapchat"></i></a></li>
-        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
-    </ul>
-</footer>
-
-</body>
+       </body>
 
 </html>

@@ -27,7 +27,7 @@
 
 .footer-site {
     background-color: #000000;
-    color: #ffffff;
+    color: #e61b1b;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -97,4 +97,59 @@
     }
 }
 
+* { margin: 0; padding: 0; }
 
+
+/*slider*/
+.slider {
+  display: ruby;
+    height: 500px;
+   width: 500px;
+   margin: auto;
+   margin-top: 20px;
+    position: relative;
+}
+  
+.slider li {
+    list-style: none;
+   position: -ms-page;
+}
+ 
+.slider img {
+ margin: auto;
+  height: 100%;
+   width: 100%;
+    vertical-align: top;
+    } 
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: rgba(255, 0, 0, 0.39);
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+ 
+.slider li:nth-child(1) label {
+left: 10px;
+}
+ 
+.slider li:nth-child(2) label {
+left: 40px;
+}
+
+ .slider img {
+ opacity: 0;
+  visibility: hidden;
+}
+  
+ .slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+   z-index: 10;
+} 

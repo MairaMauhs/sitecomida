@@ -71,7 +71,7 @@ nav ul li a.active {
 section.sec1 {
     width: 100%;
     height: 100vh;
-    background: url(../img/cccc.jpg);
+    background: url(../img/logoin.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@ section.sec1 {
 section.sec2 {
     width: 100%;
     height: 100vh;
-    background: url(../img/out.jpg);
+    background: url(../img/car.gif);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ section.sec2 {
 section.sec3 {
     width: 100%;
     height: 100vh;
-    background: url(../img/car.jpg);
+    background: url(../img/out.gif);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +98,7 @@ section.sec3 {
 section.sec4 {
     width: 100%;
     height: 100vh;
-    background: url(../img/pre.jpg);
+    background: url(../img/dinheiro.gif);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,7 @@ section.sec4 {
 section.sec9 {
     width: 100%;
     height: 100vh;
-    background: url(../img/login.jpg);
+    background: url(../img/loginn.gif);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,6 +124,7 @@ section.sec9 {
     text-align: justify;
     font-size: 20px;
     line-height: 30px;
+    text-align: justify;
 }
 
 
@@ -134,37 +135,412 @@ section.sec9 {
 p {
     text-align: center;
 }
-/*slider*/
-* { margin: 0; padding: 0; }
+body{
+    background-image: url('../img/legallll.jpg');/*Aqui você coloca o link da sua imagem*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .linha-especial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6b05be;
+    height: 300px;
+}
+.linha-especial h2{
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+     line-height: 30px;
+}
+.linha-especial h3{
+    font-size: 64px;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.linha-especial a {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.linha-especial a:hover{
+    border: 1px solid #000;
+    color:#000;
+    transition: .8s;
+}
 
-.slider {
-  display: block;
-  height: 293px;
-   width: 600px;
-   margin: auto;
-   margin-top: 20px;
-    position: relative;
+/*Outra linha especial*/
+.linha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eb0ceb;
+    height: 300px;
 }
-  
-.slider li {
-    list-style: none;
-   position: absolute;
+.linha h2{
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+     line-height: 30px;
 }
- 
-.slider img {
- margin: auto;
-  height: 100%;
-   width: 100%;
-    vertical-align: top;
-    } 
-.slider input {
-    display: none;
+.linha h3{
+    font-size: 64px;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+    font-weight: bold;
+    color: #fff;
 }
-.slider label {
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
+.linha a {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.linha a:hover{
+    border: 1px solid #000;
+    color:#000;
+    transition: .8s;
+}
+/*Fim da segunda linha especial*/
+/*Inicio de outro especial*/
+.especial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #7c5899;
+    height: 300px;
+}
+.especial h2{
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+     line-height: 30px;
+}
+.especial h3{
+    font-size: 64px;
+    text-transform: uppercase;
+    font-family: 'quicksand',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.especial a {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.especial a:hover{
+    border: 1px solid #000;
+    color:#000;
+    transition: .8s;
+}
+
+/*Final do outro especial*/
+.contato-bg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.contato-bg h2{
+    font-size: 24px;
+    font-family: 'quicksand',sans-serif;
+    font-weight: bold;
+}
+.contato-bg h3 {
+    font-size: 16px;
+    font-family: 'quicksand',sans-serif;
+}
+.contato-bg h3:after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #000;
     display: block;
-    height: 10px;
-    position: absolute;
+    margin: 0 auto
 }
+.form{
+    margin-top: 30px;
+}
+.form span {
+    font-size: 16px;
+    font-family: 'quicksand',sans-serif;
+    font-weight: bold;
+}
+.nome input{
+    display: flex;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #000;
+}
+.email input{
+    display: flex;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #000;
+}
+.telefone input{
+    display: flex;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #000;
+}
+.msg textarea{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+}
+.btn input{
+    width: 100px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 64px;
+    border: 1px solid #000;
+}
+.btn input{
+    background: none;
+}
+.endereco-cont p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.email-tel p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.endereco-cont {
+    margin-bottom: 15px;
+}
+.sep:after{
+    content: "";
+    width: 300px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 0 auto;
+}
+.horario-cont p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.horario-cont,.email-tel,.endereco-cont{
+    margin-top: 10px;
+}
+.endereco-cont:before{
+    content: "";
+    width: 300px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin-bottom: 10px;
+}
+.horario-cont{
+    margin-bottom: 32px;
+}
+/*Rodapé*/
+.rodape{
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-bg {
+    margin-top: 32px;
+}
+/*---------------------------*/
+.endereco {
+    color: #fff;
+    margin: 10px;
+}
+.endereco h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.endereco h3:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+    display: block;
+}
+.endereco p {
+    font-size: 16px;
+    width: 300px;
+    line-height: 25px;
+    font-family: 'quicksand',sans-serif;
+    text-align: center;
+}
+/*---------------------------*/
+.contato {
+    color: #fff;
+    margin: 10px;
+}
+.contato h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contato h3:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+    display: block;
+}
+.contato p {
+    font-size: 16px;
+    width: 300px;
+    line-height: 25px;
+    font-family: 'quicksand',sans-serif;
+    text-align: center;
+}
+/*---------------------------*/
+.horario {
+    color: #fff;
+    margin: 10px;
+}
+.horario h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.horario h3:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+    display: block;
+}
+.horario p {
+    font-size: 16px;
+    width: 300px;
+    line-height: 25px;
+    font-family: 'quicksand',sans-serif;
+    text-align: center;
+}
+/*---------------------------*/
+.novidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.novidades h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.novidades input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+    width: 300px;
+}
+.btn-rodape {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #fff;
+    padding: 10px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/*---------------------------*/
+.rodape-final{
+    background: #333;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rodape-final p{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+/*Fim do rodapé*/
+/*coisas do botão de voltar*/
+#subir{
+	position:fixed;
+	bottom:0px;
+    color: rgb(209, 63, 19);
+    left: 0px;
+    
+}
+/*Fim da coisa*/
+/*negociodebusca*/
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px; 
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:226px;
+  }
+   
+  #btnBusca{
+    float:left;
+    cursor:pointer;
+  }
+   
+  #divBusca img{
+    float:left;
+  }
+   
+  #divBusca{
+    border:solid 6px rgba(47, 79, 79, 0.8);
+    border-radius:6px;
+    height:37px;
+    width:150px;
+  }
+/*iniciodonegociodebusca*/

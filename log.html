@@ -42,42 +42,60 @@
         </nav>
 
         <section class="sec9"></section>
-        <section class="content">
-            <form method="post" action="doLogin.php">
-                Login: <input type="text" name="login"/><br/>
-                Password: <input type="password" name="password"/><br/>
-                <button type="submit" name="boton" value="login">
-                  Entrar
-                </button><br><br><br>
-              </form>
-        </section>
         
+        <section class="contato-bg">
+            <div class="central-bg">
+                <div class="form">
+        <form name="formContato" action="enviar.php" method="POST">
+            <p class="nome">
+                <span>Nome:</span><input type="text" name="nome" required="required">
+            </p>
 
-        
-        
-        
-                
-                
+            <p class="email">
+                <span>E-mail:</span><input type="text" name="email" required="required">
+            </p>
 
-        
+            <p class="telefone">
+                <span>Telefone:</span><input type="text" name="telefone" required="required">
+            </p>
 
-        <section class="footer-site">
+            <p class="msg">
+                <span>Mensagem:</span><textarea name="msg"></textarea>
+            </p>
+            <p class="btn">
+                <input type="submit" name="button" value="Enviar"><br>
+            </p>
 
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-xs-12">
-
-                        <p class="text-center" style="text-align: center;">Todos os direitos reservados.</p>
-
-                    </div>
-
-                </div>
-
+        </form>
+            <div class="infor-cont">
+            <div class="endereco-cont">
+                <span>Endereço</span>
+                <p>Rio Grande do Sul - RS</p>
+                <p>Shopping</p>
+                <span class="ver-maps"><a href="https://www.google.com.br/maps/@-29.7692829,-51.1459045,3a,75y,265.99h,93.41t/data=!3m6!1e1!3m4!1sTb-6ed49t3RP09DpM-GN2Q!2e0!7i16384!8i8192" target="_blank"></a></span>
             </div>
-
-        </section>
+                <div class="sep">
+                </div>
+            <div class="email-tel">
+                <span>Email &amp; Telefone</span>
+                <p>Laviedouce@gmail.com</p>
+                <p>00 00 0000-0000<br><br>
+                     1111-1111
+                </p>
+            </div>
+                 <div class="sep">
+                </div>
+            <div class="horario-cont">
+                <span><img src="img/on-min.png" alt=""> Horário</span>
+                <p> Aberto segunda a sábado 8:30 - 19:30<br><br>
+                    Domingo e Feriado 11:00 - 17:00</p>
+                </div>
+                <div id="voltarTopo">
+                    <a href="log.html" id="subir"><font size="+3">Topo</font></a>
+                </div>
+        </div>
+    </div>
+    
 
 </body>
 
